@@ -1,7 +1,7 @@
 module load intel
 
-icc -xHost -O3 -o with_force_red    with_force_red.c
-icc -xHost -O3 -o without_force_red without_force_red.c
+icc -march=core-avx2 -O3 -o with_force_red    with_force_red.c
+icc -march=core-avx2 -O3 -o without_force_red without_force_red.c
 
 echo 'With force reduction'
 ./with_force_red     100000 0.01
