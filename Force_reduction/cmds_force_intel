@@ -1,4 +1,5 @@
-module load intel
+module load cpu/0.15.4
+module load intel/19.1.1.217
 
 icc -march=core-avx2 -O3 -o with_force_red    with_force_red.c
 icc -march=core-avx2 -O3 -o without_force_red without_force_red.c

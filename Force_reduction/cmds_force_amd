@@ -1,4 +1,5 @@
-module load aocc
+module load cpu/0.15.4
+module load aocc/2.2.0
 
 clang -march=znver2 -O3 -o with_force_red    with_force_red.c
 clang -march=znver2 -O3 -o without_force_red without_force_red.c
