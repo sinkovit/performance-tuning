@@ -1,4 +1,5 @@
-module load intel
+module load cpu/0.15.4
+module load intel/19.1.1.217
 
 ifort -march=core-avx2        -o fused_loops_df fused_loops.f
 ifort -march=core-avx2 -O0    -o fused_loops_O0 fused_loops.f

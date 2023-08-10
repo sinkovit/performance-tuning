@@ -1,4 +1,5 @@
-module load aocc
+module load cpu/0.15.4
+module load aocc/2.2.0
 
 flang -march=znver2        -o fused_loops_df fused_loops.f
 flang -march=znver2 -O0    -o fused_loops_O0 fused_loops.f
