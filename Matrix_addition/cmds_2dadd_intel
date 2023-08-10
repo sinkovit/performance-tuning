@@ -1,4 +1,5 @@
-module load intel
+module load cpu/0.15.4
+module load intel/19.1.1.217
 
 ifort -march=core-avx2        -o dmadd_good_df dmadd_good.f
 ifort -march=core-avx2 -O0    -o dmadd_good_O0 dmadd_good.f

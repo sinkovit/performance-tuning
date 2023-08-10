@@ -1,4 +1,5 @@
-module load aocc
+module load cpu/0.15.4
+module load aocc/2.2.0
 
 flang -march=znver2        -o dmadd_good_df dmadd_good.f
 flang -march=znver2 -O0    -o dmadd_good_O0 dmadd_good.f
