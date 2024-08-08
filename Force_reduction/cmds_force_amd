@@ -1,8 +1,8 @@
-module load cpu/0.15.4
-module load aocc/2.2.0
+module load cpu/0.17.3b
+module load aocc/3.2.0
 
-clang -march=znver2 -O3 -o with_force_red    with_force_red.c
-clang -march=znver2 -O3 -o without_force_red without_force_red.c
+clang -march=znver2 -O3 -o with_force_red    with_force_red.c -lm
+clang -march=znver2 -O3 -o without_force_red without_force_red.c -lm
 
 echo 'With force reduction'
 ./with_force_red     100000 0.01
